@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bodoni+Moda:wght@400;900&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+
+.title_small {
+    font-size: 20px;
+}
+
+.form_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: 2px solid rgb(128, 128, 210);
+    border-radius: 7px;
+    padding: 5px 10px;
+    transition: 0.3s ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    background-color: rgb(166, 0, 255);
+    border: 2px solid rgb(169, 128, 210);
+    color: black;
+}
+
+.textarea_control {
+    grid-column: 1/span 2;
+}
+
+.textarea_control textarea {
+    width: 100%;
+}
+
+@media (max-width: 460px) {
+    .textarea_control {
+        grid-column: 1/span 1;
+    }
+}
